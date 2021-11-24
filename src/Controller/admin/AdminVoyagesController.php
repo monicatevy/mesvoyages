@@ -91,7 +91,7 @@ class AdminVoyagesController extends AbstractController{
         $this->om->remove($visite);
         $this->om->flush();
         return $this->redirectToRoute('admin.voyages');
-    }    
+    }
 
     /**
      * @Route("/admin", name="admin.voyages")
@@ -102,5 +102,5 @@ class AdminVoyagesController extends AbstractController{
         return $this->render("admin/admin.voyages.html.twig", [
             'visites' => $visites
         ]);
-    }    
+    }
 }
